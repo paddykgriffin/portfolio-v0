@@ -1,0 +1,46 @@
+/* ==========================================================================
+   FORMS
+   ========================================================================== */
+
+
+
+label {
+    display: block;
+    margin-bottom: $spacing-unit-small;
+    @include font-size(20px);
+    @include Ubuntu-Regular;
+}
+
+.info-label {
+    display: block;
+    margin-top: -#{$spacing-unit-small};
+    margin-bottom: $spacing-unit-small;
+    color: $form-info;
+    @include font-size(14px);
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    margin-bottom: $spacing-unit;
+    padding: $spacing-unit - (8) $spacing-unit-small;
+    width: 100%;
+    border: solid 1px $form-border;
+}
+
+textarea {
+    margin-bottom: $spacing-unit;
+    width: 100%;
+    border: solid 1px $form-border;
+}
+
+input[type="submit"] {
+    color: $secondary-color-white;
+    width: 100%;
+
+    @include mq($from: tablet) {
+        width: inherit;
+    }
+
+}
+

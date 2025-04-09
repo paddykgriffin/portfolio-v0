@@ -1,0 +1,68 @@
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+
+.c-hero {
+  padding-top: $spacing-unit ;
+  padding-bottom: $spacing-unit;
+  background: $primary-brand-color;
+  @include center-text();
+  color: $secondary-color-purple;
+  border-bottom:5px solid $secondary-color-purple;
+
+  @include mq($from: desktop) {
+    padding-top: 0;
+  }
+
+  h2 {
+    margin: 0 0 5px 0;
+    padding-bottom: $spacing-unit;
+    @include Ubuntu-Light;
+    color: $secondary-color-light-grey;
+    @include font-size(24px);
+    line-height: 1.5;
+
+
+  }
+
+  .c-btn {
+      display: block;
+      margin: 0 auto;
+      max-width: 200px;
+      @include text-transform-lowercase;
+      padding-left: $spacing-unit + 15;
+      padding-right: $spacing-unit + 15;
+  }
+
+
+}
+
+.c-hero__lead {
+  display: inline-block;
+  margin: 0;
+  padding-left: $spacing-unit / 2;
+  padding-right: $spacing-unit / 2;
+  padding-bottom: 10px;
+  @include font-size(50px);
+  @include Ubuntu-Light;
+  border-bottom: 5px solid $secondary-color-light-purple;
+
+  @include mq($from: desktop) {
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+    @include font-size(100px);
+  }
+}
+
+
+.c-hero__job-title {
+  display: block;
+  padding: $spacing-unit-small 0 $spacing-unit-large 0;
+  @include font-size(22px);
+
+  @include mq($from: desktop) {
+    padding: $spacing-unit-small 0 $spacing-unit 0;
+  }
+
+}

@@ -1,0 +1,10 @@
+///*------------------------------------*\
+//    #SETTINGS
+//\*------------------------------------*/
+
+
+@use "settings.global" as global;
+@use "settings.config" as config;
+@use "settings.colors" as colors;
+@use "../../../node_modules/inuitcss/settings/settings.core";
+@use "settings.fonts" as fonts;

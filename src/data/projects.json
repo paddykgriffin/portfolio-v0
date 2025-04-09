@@ -1,0 +1,206 @@
+{
+	"projectsHome": [
+		{
+			"project-title": "Dublin Chamber",
+			"background-image": "thumb-dublin-chamber.jpg",
+			"logo": "logo-dublin-chamber.png",
+			"client-name": "dublin-chamber",
+			"tags": "frontend development & UX"
+		},
+		{
+			"project-title": "DEC",
+			"background-image": "thumb-dec.jpg",
+			"logo": "logo-dec.png",
+			"client-name": "dec",
+			"tags": "design, ux & frontend"
+		},
+		{
+			"project-title": "More Munich",
+			"background-image": "thumb-more-munich.jpg",
+			"logo": "logo-more-munich.png",
+			"client-name": "more-munich",
+			"tags": "design, ux & frontend"
+		},
+		{
+			"project-title": "IDA",
+			"background-image": "thumb-ida.jpg",
+			"logo": "logo-ida.png",
+			"client-name": "ida",
+			"tags": "frontend development, UX & design"
+		},
+		{
+			"project-title": "CPW",
+			"background-image": "thumb-carphone-warehouse.jpg",
+			"logo": "logo-carphone-warehouse.png",
+			"client-name": "cpw",
+			"tags": "frontend development & UX"
+		},
+		{
+			"project-title": "Red Mills",
+			"background-image": "thumb-redmills.jpg",
+			"logo": "logo-redmills.png",
+			"client-name": "redmills",
+			"tags": "frontend development"
+		}
+	],
+
+	"projectsLatest": [
+		{
+			"project-title": "Dublin Chamber",
+			"background-image": "thumb-dublin-chamber.jpg",
+			"logo": "logo-dublin-chamber.png",
+			"client-name": "dublin-chamber",
+			"tags": "frontend development & UX"
+		},
+		{
+			"project-title": "DEC",
+			"background-image": "thumb-dec.jpg",
+			"logo": "logo-dec.png",
+			"client-name": "dec",
+			"tags": "design, ux & frontend"
+		},
+		{
+			"project-title": "More Munich",
+			"background-image": "thumb-more-munich.jpg",
+			"logo": "logo-more-munich.png",
+			"client-name": "more-munich",
+			"tags": "design, ux & frontend"
+		}
+	],
+
+	"projectsFeatured": [
+		{
+			"project-title": "IDA",
+			"background-image": "thumb-ida.jpg",
+			"logo": "logo-ida.png",
+			"client-name": "ida",
+			"tags": "frontend development, UX & design"
+		},
+		{
+			"project-title": "CPW",
+			"background-image": "thumb-carphone-warehouse.jpg",
+			"logo": "logo-carphone-warehouse.png",
+			"client-name": "cpw",
+			"tags": "frontend development & UX"
+		},
+		{
+			"project-title": "More Munich",
+			"background-image": "thumb-more-munich.jpg",
+			"logo": "logo-more-munich.png",
+			"client-name": "more-munich",
+			"tags": "design, ux & frontend"
+		}
+	],
+
+	"projectsFeaturedAlternative": [
+		{
+			"project-title": "Dublin Chamber",
+			"background-image": "thumb-dublin-chamber.jpg",
+			"logo": "logo-dublin-chamber.png",
+			"client-name": "dublin-chamber",
+			"tags": "frontend development & UX"
+		},
+		{
+			"project-title": "Grosvenor Services",
+			"background-image": "thumb-grosvenor.jpg",
+			"logo": "logo-grosvenor.png",
+			"client-name": "grosvenor-services",
+			"tags": "frontend development"
+		},
+		{
+			"project-title": "Tesco Mobile",
+			"background-image": "thumb-tesco-mobile.jpg",
+			"logo": "logo-tesco-mobile.png",
+			"client-name": "tesco-mobile",
+			"tags": "frontend development, UX, & design"
+		}
+	],
+
+
+	"projects": [
+		{
+			"project-title": "Dublin Chamber",
+			"background-image": "thumb-dublin-chamber.jpg",
+			"logo": "logo-dublin-chamber.png",
+			"client-name": "dublin-chamber",
+			"tags": "frontend development & UX"
+		},
+		{
+			"project-title": "More Munich",
+			"background-image": "thumb-more-munich.jpg",
+			"logo": "logo-more-munich.png",
+			"client-name": "more-munich",
+			"tags": "design, ux & frontend"
+		},
+		{
+			"project-title": "DEC",
+			"background-image": "thumb-dec.jpg",
+			"logo": "logo-dec.png",
+			"client-name": "dec",
+			"tags": "design, ux & frontend"
+		},
+		{
+			"project-title": "Red Mills",
+			"background-image": "thumb-redmills.jpg",
+			"logo": "logo-redmills.png",
+			"client-name": "redmills",
+			"tags": "frontend development"
+		},
+		{
+			"project-title": "CPW",
+			"background-image": "thumb-carphone-warehouse.jpg",
+			"logo": "logo-carphone-warehouse.png",
+			"client-name": "cpw",
+			"tags": "frontend development & UX"
+		},
+		{
+			"project-title": "Grosvenor Services",
+			"background-image": "thumb-grosvenor.jpg",
+			"logo": "logo-grosvenor.png",
+			"client-name": "grosvenor-services",
+			"tags": "frontend development"
+		},
+		{
+			"project-title": "Tesco Mobile",
+			"background-image": "thumb-tesco-mobile.jpg",
+			"logo": "logo-tesco-mobile.png",
+			"client-name": "tesco-mobile",
+			"tags": "frontend development, UX, & design"
+		},
+		{
+			"project-title": "Aviva Stadium",
+			"background-image": "thumb-aviva-stadium.jpg",
+			"logo": "logo-aviva-stadium.png",
+			"client-name": "aviva-stadium",
+			"tags": "frontend development, UX & design"
+		},
+		{
+			"project-title": "Megazyme",
+			"background-image": "thumb-megazyme.jpg",
+			"logo": "logo-megazyme.png",
+			"client-name": "megazyme",
+			"tags": "frontend development, UX & design"
+		},
+		{
+			"project-title": "IDA",
+			"background-image": "thumb-ida.jpg",
+			"logo": "logo-ida.png",
+			"client-name": "ida",
+			"tags": "frontend development, UX & design"
+		},
+		{
+			"project-title": "Nicolas O'Dywer",
+			"background-image": "thumb-nicolas-odywer.jpg",
+			"logo": "logo-nicolas-odywer.png",
+			"client-name": "nicolas-odywer",
+			"tags": "frontend development"
+		},
+		{
+			"project-title": "ID Mobile",
+			"background-image": "thumb-id-mobile.jpg",
+			"logo": "logo-id-mobile.png",
+			"client-name": "idmobile",
+			"tags": "frontend development & UX"
+		}
+	]
+}

@@ -1,0 +1,95 @@
+/* ==========================================================================
+   Social Media Buttons
+   ========================================================================== */
+
+.c-social-media {
+  @include clearfix();
+  display: inline-block;
+  margin-top: 30px;
+  width: auto;
+
+  @include mq($from: desktop) {
+    margin-top: 20px;
+  }
+
+
+  .c-social-media__icon {
+    position: relative;
+    float: left;
+    margin: 0 5px;
+
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      height: 32px;
+      width: 32px;
+      background: $secondary-color-purple;
+      transition: $global-transition;
+      transition: top ease 0.5s;
+
+      &:before {
+        @include font-awesome-brand;
+      }
+
+      svg {
+        @include center-vertically;
+        @include font-size(18px);
+        color: $secondary-color-light-purple;
+      }
+
+      &:hover {
+        transition: $global-transition;
+        background: $secondary-color-white;
+      }
+    }
+  }
+
+  .c-social-media__icon--linkedin {
+    a {
+      &:before {
+          content: "\f0e1";
+      }
+    }
+
+  }
+
+  .c-social-media__icon--github {
+
+    a {
+      &:before {
+          content: "\f09b";
+      }
+    }
+  }
+
+  .c-social-media__icon--twitter {
+
+    a {
+      &:before {
+          content: "\f099";
+      }
+    }
+  }
+
+  .c-social-media__icon--facebook {
+
+    a {
+      &:before {
+        content: "\f39e";
+      }
+    }
+  }
+
+  .c-social-media__icon--codepen {
+
+    a {
+      &:before {
+        content: "\f1cb";
+      }
+    }
+  }
+
+}

@@ -1,0 +1,76 @@
+/* ==========================================================================
+   #FILTERS
+   ========================================================================== */
+
+.c-filter {
+
+  margin-bottom: $spacing-unit;
+
+  @include mq($from:tablet) {
+      margin-bottom: $spacing-unit-large;
+  }
+
+}
+
+.c-filter__inner {
+
+  margin: 0 auto;
+
+
+  @include mq($from:tablet) {
+      max-width: 750px;
+  }
+
+
+}
+
+
+.c-filter__label {
+  display: block;
+  margin-bottom: $spacing-unit-small;
+  @include Ubuntu-Regular-Italic;
+
+  @include mq($from:tablet) {
+      margin-bottom: $global-reset;
+  }
+
+}
+
+
+.c-filter__options {
+
+
+  button {
+    width: 40%;
+    margin: $spacing-unit-tiny;
+    padding: $spacing-unit-tiny $spacing-unit - (6);
+    @include font-size(14px);
+    border: 0;
+    border-radius: 25px;
+    background: $secondary-color-button-grey;
+    transition: $global-transition;
+
+    &:last-child {
+      width: auto;
+    }
+
+
+
+    &:hover {
+      cursor: pointer;
+      color: $secondary-color-white;
+      background: $primary-brand-color;
+    }
+
+    @include mq($from:tablet) {
+        width: auto;
+        margin-left: $spacing-unit;
+        margin-right: -4px;
+
+        &:first-child {
+          margin-left: $global-reset;
+        }
+    }
+
+  }
+}

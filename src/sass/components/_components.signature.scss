@@ -1,0 +1,20 @@
+/* ==========================================================================
+   Signature
+   ========================================================================== */
+
+
+   .c-signature {
+
+    padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit-large;
+    color: $secondary-color-light-grey;
+
+    .c-signature__name {
+        margin-bottom: $global-reset;
+        @include font-size(80px);
+        @include Journal;
+        line-height: 1.0;
+    }
+
+
+   }

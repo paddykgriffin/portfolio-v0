@@ -1,0 +1,77 @@
+/* ==========================================================================
+   #PAGE HEADER
+   ========================================================================== */
+
+.c-page-heading {
+  position: relative;
+  padding: $spacing-unit;
+  padding-bottom: $global-reset;
+
+  @include mq($from: tablet) {
+    padding-top: $spacing-unit-large;
+    padding-bottom: $spacing-unit;
+  }
+
+  h1 {
+
+    margin-bottom: $spacing-unit-small;
+
+    @include font-size(32px);
+    @include Ubuntu-Medium;
+
+
+    @include mq($from: tablet) {
+        @include font-size(48px);
+    }
+
+    @include mq($from: desktop) {
+        @include font-size(75px);
+    }
+
+  }
+
+  p {
+    padding: 0 $spacing-unit-small;
+    color: $secondary-color-light-grey;
+    @include font-size(18px);
+    @include Ubuntu-Regular-Italic;
+
+    @include mq($from: tablet) {
+      @include center-block;
+      max-width: 750px;
+    }
+
+
+  }
+
+
+}
+
+
+/* Modifer
+   ========================================================================== */
+
+.c-page-heading--project-page {
+
+  h1 {
+
+    @include mq($from: desktop) {
+        margin-bottom: $spacing-unit;
+        @include font-size(55px);
+    }
+
+  }
+
+  p {
+    margin-bottom: $global-reset;
+    @include font-size(20px);
+    line-height: 1.4;
+    @include center-block
+
+    @include mq($from: desktop) {
+      max-width: 475px;
+    }
+
+  }
+
+}

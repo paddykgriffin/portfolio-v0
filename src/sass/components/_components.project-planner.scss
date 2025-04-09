@@ -1,0 +1,114 @@
+// <reference path="../settings/_settings.colors.scss" />.
+
+
+
+/* ==========================================================================
+   Project Planner
+   ========================================================================== */
+
+/**
+ * This component is a phase 2 component as requires custom logic
+ * to submit the form and send emails
+ */
+
+
+.c-project-planner {
+    margin-bottom: $spacing-unit-huge;
+}
+
+.c-project-planner__form {
+    @include center-block;
+    padding-right: $spacing-unit;
+    padding-bottom: $spacing-unit;
+    padding-left: $spacing-unit;
+    text-align: left;
+    
+    border: solid 1px $form-border;
+    background: $form-background;
+
+    @include mq($from: tablet) {
+        max-width: 650px;
+        padding-right: $spacing-unit-huge - (26px);
+        padding-bottom: $spacing-unit-large;
+        padding-left: $spacing-unit-huge - (26px);
+        border-radius: 15px;
+    }
+
+
+}
+
+
+
+.c-project-planner__form-header {
+    margin-top: $spacing-unit-large;
+    color: $secondary-color-green;
+    @include Ubuntu-Light;
+    @include font-size(30px);
+}
+
+
+.c-project-planner__form-row--button-row {
+   
+    @include center-text;
+
+    @include mq($from: tablet) {
+        margin-top: $spacing-unit-large;
+    }
+}
+
+
+
+/* Thank You
+   ========================================================================== */
+
+
+
+.c-project-planner__thanks {
+
+    @include center-block;
+
+    .o-wrapper {
+        width: 100%;
+    }
+
+
+    p {
+       
+        @include font-size(20px);
+        @include Ubuntu-Regular-Italic;
+        
+    }
+
+    svg {
+        color: $secondary-color-light-green;
+        @include font-size(120px);
+    }
+
+    .c-alert {
+
+        @include center-block;
+
+        @include mq($from: desktop) {
+            padding-left: $spacing-unit-large;
+            padding-right: $spacing-unit-large;
+            max-width: 680px;
+        }
+
+        p {
+            margin: $global-reset;
+            text-align: left;
+        }
+    }
+
+
+    @include mq($from: tablet) {
+        margin-top: $spacing-unit;
+        max-width: 650px;
+    }
+
+    @include mq($from: desktop) {
+        margin-bottom: $spacing-unit-huge;
+        max-width: 750px;
+        border-bottom:solid 1px $secondary-color-medium-grey;
+    }
+}

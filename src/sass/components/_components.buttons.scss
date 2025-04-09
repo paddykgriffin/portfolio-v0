@@ -1,0 +1,316 @@
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+
+/**
+ * This is an example component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ * 5. Force all button-styled elements to appear clickable.
+ */
+
+.c-btn {
+  display: inline-block; /* [1] */
+  vertical-align: middle; /* [2] */
+  font: inherit; /* [3] */
+  text-align: center; /* [4] */
+  margin: 0; /* [4] */
+  cursor: pointer; /* [5] */
+  padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit;
+  transition: $global-transition;
+  //border-radius: $global-radius;
+  border:0;
+}
+
+
+/* Style variants
+   ========================================================================== */
+
+.c-btn--primary {
+
+  background-color: $secondary-color-purple;
+  @include font-size(20px);
+  border:solid 2px $secondary-color-light-purple;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none; /* [4] */
+    color: $secondary-color-medium-grey;
+  }
+
+  &:hover,
+  &:focus {
+    color: $secondary-color-white;
+  }
+
+  &:hover {
+    background: $primary-brand-color-hocus;
+  }
+
+}
+
+.c-btn--secondary {
+  background-color: #2f4054;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #1d2733;
+  }
+
+}
+
+.c-btn--tertiary {
+ // background-color: $secondary-color-medium-grey;
+  color: $secondary-color-grey;
+  text-decoration: none;
+  opacity: $global-opacity;
+
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    opacity: 1;
+    color: $secondary-color-green;
+  }
+
+
+
+}
+
+
+
+/* Menu Button (Bars)
+   ========================================================================== */
+.c-btn--menu {
+  position: relative;
+  background: none;
+
+  @include mq($from: tablet) {
+    width: 190px;
+  }
+
+
+  svg {
+    @include font-size(32px);
+  }
+
+  &:after {
+    display: none;
+    font-family: 'Font Awesome 5 Light';
+    content: "\f0c9";
+  }
+
+  .label {
+    margin-right: $spacing-unit-tiny;
+    @include font-size(22px);
+    @include Ubuntu-Regular;
+    @include position(absolute,$top:50%,$right:50%);
+    transform: translate(-50%, -50%);
+    text-transform: capitalize;
+  }
+
+
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: $secondary-color-dark-purple;
+  }
+
+  &:hover,
+  &:focus {
+    color: $secondary-color-white;
+  }
+
+}
+
+/* Close Menu Button (Close)
+   ========================================================================== */
+
+   .c-btn--menu-close {
+     background: $primary-brand-color;
+     font-size: 0;
+     @include position(absolute,$right:0,$top:50%);
+     transform: translate(-20%, -50%);
+     padding: $spacing-unit / 2 ;
+
+     svg {
+       @include font-size(32px);
+     }
+
+     &,
+     &:hover,
+     &:active,
+     &:focus {
+       text-decoration: none;
+       color: $secondary-color-dark-purple;
+     }
+
+     &:hover,
+     &:focus {
+       color: $secondary-color-white;
+     }
+
+   }
+
+
+
+/* Projects Button
+   ========================================================================== */
+
+
+   .c-btn-projects {
+
+    padding: $spacing-unit $spacing-unit * 1.5;
+    @include font-size(18px);
+  
+    @include mq($from: mobile-large) {
+      @include font-size(24px);
+    }
+  
+    &.c-btn--primary {
+      color: $secondary-color-button-grey;
+  
+      &:hover,
+      &:focus {
+        background: $secondary-color-light-purple;
+      }
+  
+    }
+  
+  }
+
+  .c-btn-back-projects {
+
+    svg {
+      margin-right: 6px;
+    }
+
+    display: none;
+
+    @include mq($from: desktop) {
+      position: absolute;
+      display: block;
+      left: 0;
+      top:0;
+    }
+
+  }
+  
+/* Visit Site
+   ========================================================================== */
+
+  .c-btn-visit-site {
+
+    padding: $spacing-unit $spacing-unit-large $spacing-unit $spacing-unit-large - 10;
+    
+    &:before {
+      @include font-awesome-regular;
+      content: "\f0c1";
+      @include font-size(28px);
+      line-height: 1;
+      
+    }
+
+    svg {
+      margin-right: $spacing-unit-small;
+    }
+
+
+  }
+
+
+
+
+
+/* Size variants
+   ========================================================================== */
+
+.c-btn--small {
+  padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit-small;
+}
+
+.c-btn--large {
+  padding: $inuit-global-spacing-unit $inuit-global-spacing-unit-large;
+}
+
+
+
+
+/* Ghost buttons
+   ========================================================================== */
+
+/**
+ * Ghost buttons have see-through backgrounds and are bordered.
+ */
+
+
+.c-btn--ghost {
+  color: $secondary-color-white;
+  border: 2px solid $secondary-color-white;
+  padding:  $spacing-unit / 2  $spacing-unit;
+
+  &,
+  &:active,
+  &:focus {
+    background: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: $secondary-color-grey;
+    background: $secondary-color-white;
+    transition: all 500ms ease-in-out;
+  }
+
+  &.c-btn--primary {
+    color: #4a8ec2;
+
+    &:hover,
+    &:focus {
+      color: #3774a2;
+    }
+
+  }
+
+  &.c-btn--secondary {
+    color: #2f4054;
+
+    &:hover,
+    &:focus {
+      color: #1d2733;
+    }
+
+  }
+
+  &.c-btn--tertiary {
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+    }
+
+  }
+
+}

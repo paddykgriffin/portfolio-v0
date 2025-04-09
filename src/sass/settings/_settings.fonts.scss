@@ -1,0 +1,41 @@
+﻿/* ==========================================================================
+   #FONT
+   ========================================================================== */
+
+
+
+
+   /* Fool-proof @font-face */
+   /* Based on http://coding.smashingmagazine.com/2013/02/14/setting-weights-and-styles-at-font-face-declaration/ */
+
+   @mixin font-face($font-family, $file-path, $font-weight, $font-style) {
+     @font-face {
+       font-family: $font-family;
+         src: url('#{$file-path}.eot');
+         src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+              url('#{$file-path}.woff') format('woff'),
+              url('#{$file-path}.ttf') format('truetype'),
+              url('#{$file-path}.svg##{$font-family}') format('svg');
+       font-weight: $font-weight;
+       font-style: $font-style;
+     }
+     // Chrome for Windows rendering fix: https://www.adtrak.co.uk/blog/font-face-chrome-rendering/
+     @media screen and (-webkit-min-device-pixel-ratio: 0) {
+       @font-face {
+         font-family: $font-family;
+           src: url('#{$file-path}.svg##{$font-family}') format('svg');
+       }
+     }
+   }
+
+   @include font-face(Ubuntu-Light, '/fonts/Ubuntu/Ubuntu-Light-webfont', 300, normal);
+   @include font-face(Ubuntu-Light-Italic, '/fonts/Ubuntu/Ubuntu-Light-Italic-webfont', 300, italic);
+   @include font-face(Ubuntu-Medium, '/fonts/Ubuntu/Ubuntu-Medium-webfont', 500, normal);
+   @include font-face(Ubuntu-Regular, '/fonts/Ubuntu/Ubuntu-Regular-webfont', 400, normal);
+   @include font-face(Ubuntu-Regular-Italic, '/fonts/Ubuntu/Ubuntu-Regular-Italic-webfont', 400, italic);
+   @include font-face(Ubuntu-Bold, '/fonts/Ubuntu/Ubuntu-Bold-webfont', 700, normal);
+   @include font-face(Ubuntu-Bold-Italic, '/fonts/Ubuntu/Ubuntu-Bold-Italic-webfont', 700, italic);
+
+
+
+   @include font-face(Journal, '/fonts/Journal/Journal', 400, regular);

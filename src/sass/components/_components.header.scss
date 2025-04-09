@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.c-site-head {
+  background: $primary-brand-color;
+  @include text-transform-uppercase();
+  border-top:5px solid $secondary-color-purple;
+  padding-top: $spacing-unit - 5;
+  padding-bottom: $spacing-unit - 10;
+  transition: top 0.8s ease-in-out;
+
+
+    .c-site-head__inner {
+      display: flex;
+      justify-content: space-between;
+    }
+}
+
+.c-site-head--alternative {
+    border-bottom:5px solid $secondary-color-purple;
+}
+

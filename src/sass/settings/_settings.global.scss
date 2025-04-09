@@ -1,0 +1,23 @@
+///* ========================================================================
+//   #GLOBAL
+//   ======================================================================== */
+// The global settings file contains any project-wide variables; things that
+// need to be made available to the entire codebase.
+
+// Standardise some UI treatments.
+$global-radius: 3px !default;
+$global-transition: all 300ms ease-in-out !default;
+$global-opacity: 0.5!default;
+$global-reset:0 !default;
+
+
+// Sass-mq - Variable values, these are override from the default values
+// provided by the module
+$mq-breakpoints: (
+    mobile:  360px,
+    mobile-large:  400px,
+    tablet:  768px,
+    tablet-landscape: 992px,
+    desktop: 1200px,
+    wide:    1400px,
+);

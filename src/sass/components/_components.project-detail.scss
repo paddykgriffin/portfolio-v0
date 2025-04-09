@@ -1,0 +1,141 @@
+
+/* ==========================================================================
+   #PROJECT DETAIL
+   ========================================================================== */
+
+.c-project-detail {
+    margin-bottom: $spacing-unit;
+    padding-bottom: $spacing-unit-large;
+    border-bottom:solid 1px $secondary-color-medium-grey;
+
+    @include mq($from: desktop) {
+        @include center-block;
+        max-width: 1000px;
+    }
+
+    
+}
+
+
+/* Banner
+   ========================================================================== */
+
+.c-project-detail__screenshots {
+    margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit;
+
+
+    @include mq($from: tablet) {
+        margin-top: $spacing-unit-large;
+        margin-bottom: $spacing-unit-large;
+    }   
+
+
+
+}
+
+
+
+
+/* Content Boxes
+   ========================================================================== */
+
+
+.c-project-detail__sub-heading {
+    position: relative;
+    margin: $spacing-unit 0;
+    padding-bottom: $spacing-unit-small;
+    color: $secondary-color-green;
+    @include font-size(24px);
+    @include Ubuntu-Regular;
+
+    &:after {
+        content:"";
+
+        @include center-vertically;
+        top: 100%;
+        width:50px;
+        height: 2px;
+        background: $secondary-color-medium-grey;
+    }
+}
+
+
+.c-project-detail__content-box {
+
+   p {
+        
+        a {
+            color: $secondary-color-green;
+            transition: $global-transition;
+            text-decoration: none;
+            border-bottom: dotted 2px $secondary-color-green;
+
+            &:hover {
+                color: $secondary-color-light-grey;
+                border-bottom: dotted 2px $secondary-color-light-grey;
+            }
+        }
+
+        @include font-size(16px);
+        line-height: 1.4;
+
+        @include mq($from: tablet) {
+            @include font-size(20px);
+            line-height: 1.6;
+        }      
+
+   }
+
+   @include mq($from: tablet) {
+        @include center-block;
+        max-width: 750px;
+    }   
+
+
+
+
+}
+
+
+.c-project-detail__content-box {
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+    margin-bottom: $spacing-unit-large;
+
+    
+    
+    ul {
+        display: inline-block;
+        width: auto;
+        @include center-text;
+
+        li {
+            position: relative;
+            display: inline-block;
+            margin-bottom: $spacing-unit-small;
+            padding: $spacing-unit-tiny $spacing-unit $spacing-unit-tiny $spacing-unit-tiny;
+            @include font-size(16px);
+            @include Ubuntu-Regular-Italic;
+
+            @include mq($from: tablet) {
+                @include font-size(20px);
+            }    
+
+
+            svg {
+                margin-right: $spacing-unit-small;
+                @include font-size(8px);
+                @include center-vertically;
+                left:-5px;
+                color: $secondary-color-light-grey;
+            }
+
+
+        }
+
+    }
+ 
+
+}
+

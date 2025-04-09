@@ -1,0 +1,34 @@
+
+
+
+@use "../../node_modules/inuitcss/settings/settings.core" as core;
+
+// Reassign `$inuit-global-spacing-unit` to `$spacing-unit`.
+$spacing-unit: core.$inuit-global-spacing-unit;
+$spacing-unit-tiny: core.$inuit-global-spacing-unit-tiny;
+$spacing-unit-small: core.$inuit-global-spacing-unit-small;
+$spacing-unit-large: core.$inuit-global-spacing-unit-large;
+$spacing-unit-huge: core.$inuit-global-spacing-unit-huge;
+
+
+
+
+
+// Reassign lengthy font-size mixin to `font-size()`.
+@mixin font-size($args...) {
+  @include inuit-font-size($args...);
+}
+
+
+
+// Reassign lengthy font-size mixin to `font-size()`.
+@mixin clearfix($args...) {
+  @include inuit-clearfix($args...);
+}
+
+
+
+// Reassign lengthy font-size mixin to `font-size()`.
+@mixin hidden-visually($args...) {
+  @include inuit-hidden-visually($args...);
+}

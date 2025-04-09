@@ -1,0 +1,137 @@
+/* ==========================================================================
+   #GET IN TOUCH PANEL
+   ========================================================================== */
+
+.c-get-in-touch {
+
+
+      padding-top: $spacing-unit;
+      padding-bottom: $spacing-unit;
+
+
+
+  h2 {
+    margin-bottom: $spacing-unit-small;
+    color: $secondary-color-green;
+    @include font-size(28px);
+    @include Ubuntu-Medium;
+
+    @include mq($from: tablet) {
+
+        @include font-size(36px);
+
+    }
+  }
+
+}
+
+.c-get-in-touch--contact {
+
+
+  @include mq($from: tablet) {
+      padding-top: $global-reset;
+  }
+
+
+}
+
+
+
+
+
+
+.c-get-in-touch__tag-line {
+  margin:  0 auto $spacing-unit auto;
+  padding: 0 $spacing-unit-small;
+  color: $secondary-color-light-grey;
+  @include font-size(18px);
+  @include Ubuntu-Regular-Italic;
+
+  @include mq($from: tablet) {
+      @include font-size(20px);
+      max-width: 650px;
+  }
+
+}
+
+
+.c-get-in-touch__grid {
+  margin: 0 auto;
+  padding-top: $spacing-unit;
+
+  @include mq($from: tablet) {
+    padding: $spacing-unit-large 0 $spacing-unit-huge 0;
+  }
+
+
+  @include mq($from: desktop) {
+    // Smaller max-width for Phase 1
+    //max-width: 960px;
+    max-width: 650px;
+}
+
+
+}
+
+
+.c-get-in-touch__grid-item {
+  margin: 0 auto $spacing-unit-large auto;
+  width: 200px;
+
+  h4 {
+    color: $secondary-color-green;
+    @include font-size(24px);
+    @include Ubuntu-Light;
+  }
+
+  a {
+    @include font-size(18px);
+    @include Ubuntu-Light;
+    color: $secondary-color-light-grey;
+    text-decoration: none;
+    border-bottom:dashed 2px $secondary-color-lightest-grey;
+    transition: $global-transition;
+
+    &:hover {
+      color: $secondary-color-green;
+      border-bottom:solid 2px $secondary-color-green;
+    }
+  }
+
+
+}
+
+
+.c-get-in-touch__grid-item-icon {
+  @include position(relative);
+  margin: 0 auto $spacing-unit auto;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background: $secondary-color-lightest-grey;
+
+
+  @include mq($from: tablet) {
+    width: 200px;
+    height: 200px;
+  }
+
+
+  svg {
+    @include center-vertically;
+    @include font-size(75px);
+    color: $primary-brand-color;
+  }
+
+}
+
+.c-get-in-touch__grid-item-icon--align-center {
+
+  svg {
+
+    margin-left: $spacing-unit-small;
+
+  }
+
+
+}

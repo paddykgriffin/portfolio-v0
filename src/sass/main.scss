@@ -1,0 +1,152 @@
+/* ==========================================================================
+   INUITCSS
+   ========================================================================== */
+
+/**
+ * inuitcss, by @csswizardry
+ *
+ * github.com/inuitcss | inuitcss.com
+ */
+
+/**
+ * This is an example inuitcss manifest file. DO NOT MODIFY THIS FILE DIRECTLY.
+ * Instead, copy and paste it into your own CSS directory and make additions,
+ * extensions, and modifications there.
+ */
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Config...............Project-level configuration and feature switches.
+ * Core.................inuitcss’ core and setup settings.
+ * Global...............Project-wide variables and settings.
+ *
+ * TOOLS
+ * Font-size............A mixin which guarantees baseline-friendly line-heights.
+ * Clearfix.............Micro clearfix mixin.
+ * Hidden...............Mixin for hiding elements.
+ * Sass MQ..............inuitcss’ default media query manager.
+ *
+ * GENERIC
+ * Box-sizing...........Better default `box-sizing`.
+ * Normalize.css........A level playing field using @necolas’ Normalize.css.
+ * Reset................A tiny reset to complement Normalize.css.
+ * Shared...............Sensibly and tersely share some global commonalities
+ *                      (particularly useful when managing vertical rhythm).
+ *
+ * ELEMENTS
+ * Page.................Set up our document’s default `font-size` and
+ *                      `line-height`.
+ * Headings.............Very minimal (i.e. only font-size information) for
+ *                      headings 1 through 6.
+ * Images...............Base image styles.
+ * Tables...............Simple table styles.
+ *
+ * OBJECTS
+ * Wrapper..............Page constraint object.
+ * Layout...............Generic layout module.
+ * Media................Image- and text-like content side by side. The
+ *                      poster-child of OOCSS.
+ * Flag.................Table-layout-based advancement on the Media object.
+ * List-bare............Lists with no bullets or indents.
+ * List-inline..........A list whose items all site in a line.
+ * Box..................Simple boxing abstraction.
+ * Block................Image-on-top-of-text object.
+ * Ratio................A container for maintaining aspect ratio of content.
+ * Crop.................Provide a cropping context for media (images, etc.).
+ * Table................Classes for manipulating `table`s.
+ * Pack.................Pack items into available horizontal space.
+ *
+ * COMPONENTS
+ * Buttons..............An example button component, and how it fits into the
+ *                      inuitcss framework.
+ *
+ * UTILITIES
+ * Clearfix.............Bind our clearfix onto a utility class.
+ * Widths...............Simple width helper classes.
+ * Headings.............Reassigning our heading styles to helper classes.
+ * Spacings.............Nudge bits of the DOM around with these spacing
+ *                      classes.
+ * Responsive-Spacings..Enhances the function of normal spacings for
+ *                      responsive usage.
+ * Print................Reset-like styles taken from the HTML5 Boilerplate.
+ * Hide.................Helper classes to hide content
+ */
+
+// SETTINGS
+@use "settings/settings.all"; 
+
+// TOOLS
+@use "tools/tools.all";
+@use "../../node_modules/bootstrap/scss/mixins";
+
+
+// GENERIC
+@use "../../node_modules/inuitcss/generic/generic.box-sizing" as boxSizing;
+@use "../../node_modules/inuitcss/generic/generic.normalize" as normalize;
+@use "../../node_modules/inuitcss/generic/generic.reset" as reset;
+@use "../../node_modules/inuitcss/generic/generic.shared" as shared;
+
+// ELEMENTS 
+@use "elements/elements.page" as page;
+@use "elements/elements.headings" as headings; 
+@use "../../node_modules/inuitcss/elements/elements.images" as images;
+@use "elements/elements.tables" as tables;
+
+// OBJECTS 
+//
+// Uncomment and add to this section as necessary.
+//@use "../../node_modules/inuitcss/objects/objects.wrapper";
+@use "objects/objects.grid-wrapper";
+@use "../../node_modules/bootstrap/scss/bootstrap-grid";
+//@use "../../node_modules/inuitcss/objects/objects.layout";
+@use "../../node_modules/inuitcss/objects/objects.media";
+@use "../../node_modules/inuitcss/objects/objects.flag";
+@use "../../node_modules/inuitcss/objects/objects.list-bare";
+@use "../../node_modules/inuitcss/objects/objects.list-inline";
+@use "../../node_modules/inuitcss/objects/objects.box";
+@use "../../node_modules/inuitcss/objects/objects.block";
+@use "../../node_modules/inuitcss/objects/objects.ratio";
+@use "../../node_modules/inuitcss/objects/objects.crop";
+@use "../../node_modules/inuitcss/objects/objects.table";
+@use "../../node_modules/inuitcss/objects/objects.pack";
+@use "objects/objects.overlay";
+
+
+// COMPONENTS
+// Build and include your project’s UI Compoments here.
+@use "components/components.buttons";
+@use "components/components.header";
+@use "components/components.logo";
+@use "components/components.site-navigation";
+@use "components/components.footer";
+@use "components/components.hero";
+@use "components/components.social-media";
+@use "components/components.my-process";
+@use "components/components.core-skills";
+@use "components/components.ready-to-start";
+@use "components/components.projects";
+@use "components/components.main-content";
+@use "components/components.filter";
+@use "components/components.page-header";
+@use "components/components.get-in-touch-panel";
+@use "components/components.about";
+@use "components/components.project-planner";
+@use "components/components.form";
+@use "components/components.alert";
+@use "components/components.signature";
+@use "components/components.recent-projects";
+@use "components/components.project-detail";
+
+
+// UTILITIES
+@use "../../node_modules/bootstrap/scss/utilities/text";
+@use "../../node_modules/bootstrap/scss/utilities/spacing";
+@use "../../node_modules/inuitcss/utilities/utilities.clearfix";
+@use "../../node_modules/inuitcss/utilities/utilities.widths";
+@use "../../node_modules/inuitcss/utilities/utilities.headings";
+@use "../../node_modules/inuitcss/utilities/utilities.spacings";
+@use "../../node_modules/inuitcss/utilities/utilities.responsive-spacings";
+@use "../../node_modules/inuitcss/utilities/utilities.print";
+@use "../../node_modules/inuitcss/utilities/utilities.hide";

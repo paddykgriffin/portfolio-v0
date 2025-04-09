@@ -1,0 +1,69 @@
+/* ==========================================================================
+   Signature
+   ========================================================================== */
+
+
+   .c-recent-projects {
+    
+    padding-top: $spacing-unit-large;
+    padding-bottom: $spacing-unit;
+
+    // background: $secondary-color-lightest-grey;
+    // box-shadow: inset 0 60px 60px -60px rgba(0,0,0,0.1);
+
+    h2 {
+        color: $secondary-color-green;
+        @include font-size(26px);
+
+        @include mq($from: desktop) {
+            @include font-size(36px);
+        }
+    }
+
+    p {
+        @include center-block;
+        margin-bottom: $spacing-unit-large;
+        padding: 0 $spacing-unit;
+        @include font-size(22px);
+        line-height: 1.5;
+
+        @include mq($from: tablet) {
+            max-width: 650px;
+        }
+    }
+
+   }
+
+
+   /* Recent Project - Project detail page
+   ========================================================================== */
+
+
+
+   .c-recent-projects--detail-page {
+
+    padding-bottom: $spacing-unit-large;
+
+
+    h2 {
+        margin-bottom: $spacing-unit-large;
+    }
+
+
+    .c-btn-projects{
+
+        &:before {
+    
+          @include font-awesome-regular;
+          content: "\f100";
+          @include font-size(28px);
+          line-height: 1;
+    
+        }
+        svg {
+          margin-right: $spacing-unit;
+        }
+      }
+
+
+   }

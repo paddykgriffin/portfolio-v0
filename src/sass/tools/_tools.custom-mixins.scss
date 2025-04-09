@@ -1,0 +1,239 @@
+///* ========================================================================
+//   #MIXINS
+//   ======================================================================== */
+
+
+/* Fonts
+   ========================================================================== */
+
+@mixin Ubuntu-Light {
+  font-family: 'Ubuntu', arial, sans-serif;
+  font-weight: 300; font-style: normal; }
+
+@mixin Ubuntu-Light-Italic {
+  font-family: 'Ubuntu', arial, sans-serif;
+  font-weight: 300; font-style: italic; }
+
+@mixin Ubuntu-Regular {
+  font-family: 'Ubuntu', arial, sans-serif;
+  font-weight: 400; font-style: normal; }
+
+@mixin Ubuntu-Regular-Italic {
+  font-family: 'Ubuntu', arial, sans-serif;
+  font-weight: 400; font-style: italic; }
+
+@mixin Ubuntu-Medium {
+  font-family: 'Ubuntu', arial, sans-serif;
+  font-weight: 500; font-style: normal; }
+
+@mixin Ubuntu-Bold {
+  font-family: 'Ubuntu', arial, sans-serif;
+  font-weight: 700; font-style: normal; }
+
+@mixin Ubuntu-Bold-Italic {
+  font-family: 'Ubuntu', arial, sans-serif;
+  font-weight: 700; font-style: italic; }
+
+
+@mixin Journal {
+    font-family: 'Journal', arial, sans-serif;
+    font-weight: 400; font-style: normal; }
+
+
+
+  /* Fontawesome
+     ========================================================================== */
+
+@mixin font-awesome-solid {
+  display: none;
+  font-family: 'Font Awesome 5 Solid';
+}
+
+@mixin font-awesome-regular {
+  display: none;
+  font-family: 'Font Awesome 5 Regular';
+}
+
+@mixin font-awesome-light {
+  display: none;
+  font-family: 'Font Awesome 5 Light';
+}
+
+@mixin font-awesome-brand {
+  display: none;
+  font-family: 'Font Awesome 5 Brands';
+}
+
+
+
+
+/* Center text
+   ========================================================================== */
+
+@mixin center-text() {
+    text-align: center;
+}
+
+
+
+/* Mixin to transform text to uppercase
+   ========================================================================== */
+
+@mixin text-transform-uppercase() {
+    text-transform: uppercase;
+}
+
+
+/* Mixin to transform text to uppercase
+   ========================================================================== */
+
+@mixin text-transform-lowercase() {
+    text-transform: lowercase;
+}
+
+
+/* Mixin to transform text to capitalize (First Letter)
+   ========================================================================== */
+
+@mixin text-transform-capitalize() {
+    text-transform: capitalize;
+}
+
+
+/* Mixin to center an element
+   ========================================================================== */
+
+@mixin center-vertically {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Quickly center an block element without worrying if there is any top or bottom
+ * margins
+   ========================================================================== */
+
+@mixin center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+/* Positioning of any element
+   ========================================================================== */
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+
+
+/* Truncate text
+   ========================================================================== */
+
+@mixin truncate($truncation-boundary) {
+    max-width: $truncation-boundary;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* Retina Images - Show only on retina devices
+   ========================================================================== */
+
+@mixin retina($image, $width, $height) {
+    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        /* Serving 2x image on Retina display */
+        background-image: url($image);
+        background-size: $width $height;
+    }
+}
+
+
+/**
+ * Usage:
+ *
+ *   .logo {
+ *      background-image: url("img/logo.png");
+ *      @include retina("img/logo@2x.png", 100px, 21px);
+ *   }
+ *
+ */
+
+
+ /* CSS3 Keyframes
+    ========================================================================== */
+
+ @mixin keyframes($name) {
+     @-webkit-keyframes #{$name} {
+         @content;
+     }
+
+     @-moz-keyframes #{$name} {
+         @content;
+     }
+
+     @keyframes #{$name} {
+         @content;
+     }
+ }
+
+ /**
+  * Usage:
+  *
+  *      @include keyframes(animate) {
+  *      50% {
+  *          transform: rotate(90deg);
+  *       }
+  *      100% {
+  *          transform: rotate(-90deg);
+  *       }
+  *   }
+  *
+  */
+
+
+
+
+
+
+
+ /* Gradient Backgrounds
+    ========================================================================== */
+
+
+ @mixin gradient($start-color, $end-color, $orientation) {
+     background: $start-color;
+
+     @if $orientation == 'vertical' {
+         background: -webkit-linear-gradient(top, $start-color, $end-color);
+         background: linear-gradient(to bottom, $start-color, $end-color);
+     }
+     @else if $orientation == 'horizontal' {
+         background: -webkit-linear-gradient(left, $start-color, $end-color);
+         background: linear-gradient(to right, $start-color, $end-color);
+     }
+     @else {
+         background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
+         background: radial-gradient(ellipse at center, $start-color, $end-color);
+     }
+ }
+
+ /**
+  * Usage:
+  *
+  *  .gradient {
+  *      @include gradient(#07c, #06f, vertical);
+ *    }
+  *
+  */

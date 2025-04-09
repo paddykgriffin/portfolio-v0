@@ -1,0 +1,77 @@
+
+/* ==========================================================================
+   #WRAPPERS
+   ========================================================================== */
+
+/**
+ * Page-level constraining and wrapping elements.
+ */
+
+$grid-wrapper-width: 100% !default;
+$grid-wrapper-width-tablet: 750px !default;
+$grid-wrapper-width-tablet-landscape: 940px !default;
+$grid-wrapper-width-desktop: 1200px !default;
+$grid-wrapper-width-desktop-large: 1240px !default;
+$grid-wrapper-width-desktop-huge: 1400px !default;
+
+@if (type-of($grid-wrapper-width) != number) {
+  @error "`#{$grid-wrapper-width}` needs to be a number."
+}
+
+.o-wrapper {
+    @include clearfix();
+    padding-right: $inuit-global-spacing-unit;
+    padding-left: $inuit-global-spacing-unit;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include mq($from: tablet) {
+        width: $grid-wrapper-width-tablet;
+    }
+
+    @include mq($from: tablet-landscape) {
+        width: $grid-wrapper-width-tablet-landscape;
+    }
+
+    @include mq($from: desktop) {
+        width: $grid-wrapper-width-desktop;
+    }
+
+    @include mq($from: wide) {
+        width: $grid-wrapper-width-desktop-huge;
+    }
+
+}
+
+.o-wrapper-fluid {
+    @include clearfix();
+    padding-right: $inuit-global-spacing-unit;
+    padding-left: $inuit-global-spacing-unit;
+    margin-right: auto;
+    margin-left: auto;
+    width: $grid-wrapper-width;
+}
+
+
+/* Size variants.
+   ========================================================================== */
+
+.o-wrapper--tiny {
+  padding-right: $inuit-global-spacing-unit-tiny;
+  padding-left:  $inuit-global-spacing-unit-tiny;
+}
+
+.o-wrapper--small {
+  padding-right: $inuit-global-spacing-unit-small;
+  padding-left:  $inuit-global-spacing-unit-small;
+}
+
+.o-wrapper--large {
+  padding-right: $inuit-global-spacing-unit-large;
+  padding-left:  $inuit-global-spacing-unit-large;
+}
+
+.o-wrapper--huge {
+  padding-right: $inuit-global-spacing-unit-huge;
+  padding-left:  $inuit-global-spacing-unit-huge;
+}

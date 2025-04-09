@@ -1,0 +1,27 @@
+/* ==========================================================================
+   My Process
+   ========================================================================== */
+
+.c-my-process-statement {
+  padding: $spacing-unit-large 0;
+  @include center-text;
+  background: $secondary-color-lightest-grey;
+
+  @include mq($from: desktop) {
+
+    padding: $spacing-unit-huge 0;
+
+  }
+
+  p {
+
+    color: $secondary-color-grey;
+    @include font-size(24px);
+    line-height: 1.4;
+
+    @include mq($from: desktop) {
+      @include font-size(30px);
+    }
+
+  }
+}

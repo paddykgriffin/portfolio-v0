@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+
+.c-site-footer {
+  padding-top: $spacing-unit-large;
+  padding-bottom: $spacing-unit;
+  @include center-text();
+  background: $primary-brand-color;
+  border-bottom:5px solid $secondary-color-purple;
+}
+
+
+.c-site-footer__logo{
+  margin-bottom: $spacing-unit - 5;
+  height: 40px;
+  img {
+    height: 40px;
+  }
+  &:hover {
+    opacity: $global-opacity;
+    transition: $global-transition;
+  }
+}
+
+.c-site-footer__copyright {
+  color: $secondary-color-medium-grey;
+}
